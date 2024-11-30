@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
-import AlbumComments from "./AlbumComments";
 
-const AlbumCarousel = () => {
+interface AlbumCarouselProps {
+  setSelectedAlbumId: (id: string) => void;
+}
+
+const AlbumCarousel = ({ setSelectedAlbumId }: AlbumCarouselProps) => {
   const [albums, setAlbums] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  const [selectedAlbumId, setSelectedAlbumId] = useState<string | null>(null);
-  const [carouselIsActive, setCarouselIsActive] = useState(true);
 
   useEffect(() => {
     const fetchAccessToken = async () => {
@@ -31,7 +32,6 @@ const AlbumCarousel = () => {
 
   const handleAlbumSelect = (albumId: string) => {
     setSelectedAlbumId(albumId);
-    setCarouselIsActive(false);
   };
 
   if (loading) {
@@ -45,7 +45,7 @@ const AlbumCarousel = () => {
   return (
     <div className="carousel-container mt-4">
       <h2>Trending Albums</h2>
-      <div id="albumCarousel" className={`carousel slide ${carouselIsActive ? "active" : ""}`} data-bs-ride="carousel">
+      <div id="albumCarousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           {albums.map((album, index) => (
             <div
@@ -77,13 +77,6 @@ const AlbumCarousel = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-
-      {selectedAlbumId && (
-        <div className="comments-section">
-          <h3>Comments for Selected Album</h3>
-          <AlbumComments albumId={selectedAlbumId} />
-        </div>
-      )}
     </div>
   );
 };

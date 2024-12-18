@@ -2,7 +2,7 @@
 
 This app was simply a passion project that attempted to allow users to comment on various trending albums anonymously, along with exposing users to other trending songs/albums! I used TypeScript, React, Node.js, and MongoDB to create an intuitive yet simple UI, and an efficent and reliable backend respectively.
 
-The Spotify API was used to both provide users with an emdedded player (a later decision that replaced a custom component) to listen to songs straight from Spotify, along with provdiing up-to-date informations on artists, albums, and streams.
+The Spotify API was used to both provide users with an emdedded player (a later decision that replaced a custom component) to listen to songs straight from Spotify, along with providing up-to-date information on artists, albums, and streams.
 
 # Homepage 
 

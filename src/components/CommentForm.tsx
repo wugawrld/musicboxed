@@ -22,7 +22,7 @@ const CommentForm = ({
     setLoading(true);
 
     try {
-      const response = await axios.post("/api/comments", { albumId, content: comment });
+      const response = await axios.post("http://localhost:3000/api/comments", { albumId, content: comment });
       setComment("");
       alert("Comment posted successfully!");
       onCommentPosted(response.data);

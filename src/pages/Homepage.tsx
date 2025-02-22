@@ -13,10 +13,10 @@ const HomePage = () => {
       <NavBar />
       <div className="homepage-container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-12">
             <SpotifyPlayer playlistUrl="https://open.spotify.com/embed/playlist/37i9dQZEVXbLRQDuF5jeBp?utm_source=generator" />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-12">
             <AlbumCarousel setSelectedAlbumId={setSelectedAlbumId} />
           </div>
         </div>

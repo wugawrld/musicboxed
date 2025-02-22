@@ -9,7 +9,7 @@ const AlbumComments = ({ albumId }: { albumId: string }) => {
   useEffect(() => {
     const fetchComments = async () => {
       try {
-        const response = await axios.get(`/api/comments/${albumId}`);
+        const response = await axios.get(`http://localhost:3000/api/comments/${albumId}`);
         setComments(response.data);
       } catch (error) {
         console.error("Error fetching comments:", error);

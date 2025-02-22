@@ -8,14 +8,14 @@ The Spotify API was used to both provide users with an emdedded player (a later 
 
 The homepage was designed to be simplistic and accessible, showcasing the embedded player at the top right below the navbar, along with the album carousel underneath it.
 
-<img width="724" alt="Screenshot 2024-12-17 at 3 19 54 PM" src="https://github.com/user-attachments/assets/b742f802-6cd4-4df9-b25c-aa8853997533" />
+<img width="665" alt="Screenshot 2025-02-21 at 6 56 10 PM" src="https://github.com/user-attachments/assets/a8b9606a-88d1-484b-90c5-3873b99cf249" />
 
 # Functionality
 
-Users simply have to click on the album they want to leave a comment on, prompting the opening of a comment menu and archive; after typing a comment they hit post and the comment is stored in a MongoDB database for storage and retrieval. 
+Users simply have to click on the album they want to leave a comment on, prompting the opening of a comment menu and archive; after typing a comment they hit post and the comment is stored in a MongoDB database for storage and retrieval.
 
-<img width="727" alt="Screenshot 2024-12-17 at 3 21 13 PM" src="https://github.com/user-attachments/assets/0570500c-9bbd-4125-99d5-a338bd39806c" />
+<img width="664" alt="Screenshot 2025-02-21 at 6 56 31 PM" src="https://github.com/user-attachments/assets/b560ec18-b0ff-4e84-a1bd-4a56dd9e3f69" />
 
 Different albums all hold different comments, and accesssing the comment and archive functionality is as simple as clicking on the album they wish to view.
 
-<img width="725" alt="Screenshot 2024-12-17 at 3 21 35 PM" src="https://github.com/user-attachments/assets/48f5d783-775c-491b-922d-7742afb1ab33" />
+<img width="663" alt="Screenshot 2025-02-21 at 6 58 52 PM" src="https://github.com/user-attachments/assets/f8ee10b2-165e-4912-b39f-33c78d6a3478" />
